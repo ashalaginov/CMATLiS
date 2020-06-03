@@ -1,0 +1,52 @@
+<?php
+$End = getTime();
+
+//Generate bottom menu
+$bottom_menu = "";
+foreach ($categories as $key => $catName) {
+$bottom_menu_items = "";
+foreach ($catName['sub'] as $key1 => $subCatName) {
+//Extract ssub categories for current category
+$bottom_menu_items.="
+<div class='tag_item'>
+<a href='" . $subCatName['url'] . "'>
+" . $subCatName['name'] . "
+</a> 
+</div>";
+}
+
+//Form category block
+$bottom_menu.="
+<div id='tag_block'> 
+<div class='tag_item tag_title'>
+<a href='" . $catName['url'] . "'>
+" . $catName['name'] . "
+</a> 
+</div>
+" . $bottom_menu_items . "
+</div>";
+}
+?>
+
+
+</div>
+</div>
+
+<div class="footer">
+    <div id="tags">
+        <?php echo $bottom_menu; ?>
+    </div>
+</div>
+
+<div class="footer">
+    <div id="contacts">
+        <a href="/index.php?about">About</a> | <a href="/index.php?contribution">Contribution</a> 
+    </div>
+</div>
+
+<div id="info">
+    Page generated in <?php echo number_format(($End - $Start), 4); ?>s
+</div>
+</body>
+
+</html>

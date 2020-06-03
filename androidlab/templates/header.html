@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//RU' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Testing Laboratory Mobile Application and Malware Tesing Laboratory</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.png" type="image/xicon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="description" content="mobile forensics">
+                <meta name="keywords" content="mobile forensics">
+
+                    <!-- Different Libraries and Styles-->	
+                    <script type="text/javascript" src="js/jquery.min.js"></script>	
+                    <script type="text/javascript" src="js/jquery.showLoading.js"></script>	
+                    <script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+                    <script type="text/javascript" src="js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+                    <script type="text/javascript" src="js/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>	
+                    <script type="text/javascript" src='js/plugins/jqplot.highlighter.min.js'></script>
+                    <script type="text/javascript" src='js/plugins/jqplot.cursor.min.js'></script>
+                    <link rel="stylesheet" type="text/css" href="js/jquery.jqplot.min.css">
+
+                        <!--Own styles and JS-->
+                        <link rel="stylesheet" type="text/css" href="misc/index.css">
+                            <script type="text/javascript" src="misc/own.scripts.js"></script>	
+                            </head>
+
+                            <body>
+                                <div id="content_wrapper">
+                                    <div id="header">
+                                        <div id="logo_div">
+                                            <a href="/index.php"><div id="main_logo"></div></a>
+                                        </div>
+                                        <div id="header_content">
+                                            <div id="titler">
+                                                <h2>>CMATLiS<</h2> Complex Mobile Application Tesing Laboratory for Information Security assessment
+                                            </div>
+                                            <div id="menu">
+                                                <?php echo mainMenu($categories); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="main_content">
+
+                                        <!-- Print submenu for current menu-->
+                                        <?php echo subMenu($categories); ?>
+
+                                        <!-- Check if any system messages and print-->
+                                        <?php if(strlen($output)>1) { ?>
+                                        <div class='notations'>
+                                            <?php echo $output; ?>
+                                        </div>
+                                        <?php } ?>			
