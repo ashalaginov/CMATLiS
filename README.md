@@ -2,6 +2,10 @@
 
 Testing laboratory created for the purpose of behavioural dynamic automated analysis fo malware and goodware files. This is the project I designed to facilitate automated analysis of APK malware and benign files and easy mobile malware triage.
 
+![Analysis](analysis.png)
+
+Detailed description and technical report: file _TechReport__AndroidLab.pdf
+
 ## Usage of the AndroidLab
 - Install all necessary software components from the "Requirements" section
 - Import mobileLaboratory.sql to your MySQL server
@@ -54,8 +58,6 @@ You can find more information about the practical experiments and datasets in th
 ## Misc
 
 The interface and functionality of the testing laboratory are presented below.
-
-![Analysis](analysis.png)
 
 ![Setup of analysis](analysis_setup.png)
 
