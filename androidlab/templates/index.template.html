@@ -1,0 +1,24 @@
+<?php if(isset($_GET['about'])) { ?>
+<h4>Testing Laboratory for Mobile Applications and Malware Analysis on Android Mobile Platform</h4>
+<br>The project is targeted on statistical and dynamical testing of malicious applications and malware samples.
+<br>Basically it consists of four subsystems, which can be used separately one form another.
+<br>In the end, Analysis subsystem presents comprehensive analysis of gather date and verdict about possible threats.
+<br><br>
+
+<?php } elseif(isset($_GET['contribution'])) { ?>
+<h4>Testing Laboratory for Mobile Applications and Malware Analysis on Android Mobile Platform</h4>
+<br>This system was developed by Anrey Shalaginov as a practical part of research project at the Gjøvik University College.
+<br>Main goal of the project was to build virtual testing environment for static and dynamic analysis of mobile apps behaviour.
+<br>Special thanks to: my supervisor Prof. Katrin Franke for advices during research, designing and implementation stages of work on the Test Laboratory; 
+Knut Borg, Ruslan Puzyriov and Pavel Storozhuk-Bozhenov for tips during user interface development phase.
+<br><br>
+<?php } else if(!count($_GET)) { ?>
+<br> 
+<h4>Testing Laboratory for Mobile Applications and Malware Analysis on Android Mobile Platform</h4>
+<font color="grey">Select Page to go in the Menu</font>
+<?php }; ?>
+
+
+
+
+
