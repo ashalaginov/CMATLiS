@@ -1,7 +1,7 @@
 <?php
 
 /**
- * \file config.inc.php
+ * \file statistics.php
  * \brief Various statistics regarding permissions
  * \author Andrey Shalaginov <andrii.shalaginov@hig.no>
  * \date September-December 2012
